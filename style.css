@@ -52,14 +52,17 @@ table {
 	border-spacing: 0;
 }
 
+/* end of css reset */
+
+
 
 :root {
     --main-bg-color: #8EBA81;
-  }
+}
 
 body, html {    
     color: white;
-    font-family: 'Darker Grotesque', sans-serif;
+    font-family: 'Dosis', sans-serif;
 }
 
 .container {
@@ -99,3 +102,43 @@ body, html {
     font-size: 3em; 
 }
 
+.product-links {
+    grid-column: 4 / 5;
+    grid-row: 5 / 6;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+}
+
+.btn {
+    outline: 3px solid white;
+    padding: .5em;
+    margin-left: 3em;
+    margin-right: 3em;
+    min-width: 10em;
+    text-align: center;
+    color: white;
+    background-color: var(--main-bg-color);
+}
+
+/* .btn .orange:hover {
+    :root {
+        --main-bg-color: orange;
+    }
+} */
+
+
+/* MEDIA QUERIES */
+@media screen and (max-width: 992px) {
+    .header {
+        font-size: 14em;
+        color: blue;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .header {
+        font-size: 12em;
+        /* color: red; */
+    }
+}
