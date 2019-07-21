@@ -64,6 +64,7 @@ table {
 body, html {    
     color: white;
     font-family: 'Dosis', sans-serif;
+    overflow: hidden;
 }
 
 .container {
@@ -209,6 +210,36 @@ path {
 
     .catchphrase {
         font-size: 2em; 
+    }
+
+    #product-image {
+        display: none;
+    }
+    
+    #nav-links {
+        display: none;
+    }
+
+    #hamburger {
+        display: inline;
+        margin: auto;
+    }
+}
+
+@media screen and (max-width: 414px) {
+    .header {
+        font-size: 6em;
+    }
+
+    .btn {
+        min-width: 2em;
+        margin-left: 1em;
+        margin-right: 1em;
+        font-size: .75em;
+    }
+
+    .catchphrase {
+        font-size: 1em; 
     }
 
     #product-image {
