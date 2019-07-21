@@ -121,28 +121,34 @@ body, html {
     background-color: var(--main-bg-color);
 }
 
-/* .btn .orange:hover {
-    :root {
-        --main-bg-color: orange;
-    }
-} */
 
 
 /* MEDIA QUERIES */
 @media screen and (max-width: 992px) {
     .header {
         font-size: 14em;
-        color: blue;
+    }
+
+    .btn {
+        min-width: 8em;
+    }
+
+    .catchphrase {
+        font-size: 2em; 
     }
 }
 
 @media screen and (max-width: 768px) {
     .header {
         font-size: 12em;
-        /* color: red; */
+    }
+
+    .btn {
+        min-width: 6em;
+    }
+
+    .catchphrase {
+        font-size: 2em; 
     }
 }
 
-/* .content-box > .orange:hover {
-    background-color: orange;
-} */
