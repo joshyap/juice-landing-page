@@ -97,20 +97,21 @@ body, html {
 
 li {
     display: inline;
-    padding-left: 1em;
-    padding-right: 1em;
+    padding-left: 1vw;
+    padding-right: 1vw;
 }
 
 #nav-links {
     grid-column: 5 / 7;
     grid-row: 2 / 3; 
     margin: auto;
+    padding-top: 3vh;
 }
 
 #get-started {
-    padding: 4px;
+    padding: .75vw;
     margin-left: 10px;
-    border: 2px solid white;
+    outline: .1vw solid white;
 }
 
 .header {
@@ -118,7 +119,7 @@ li {
     grid-row: 3 / 4; 
     background-color: var(--main-bg-color);
     margin: auto;
-    font-size: 18em;
+    font-size: 18vw;
     text-align: center;
 }
 
@@ -126,7 +127,7 @@ li {
     grid-column: 4 / 5;
     grid-row: 4 / 5;
     margin: auto;
-    font-size: 3em; 
+    font-size: 3vw; 
 }
 
 .product-links {
@@ -143,30 +144,17 @@ li {
 }
 
 #product-image {
-    width: 200px;
+    width: 25vw;
 }
 
-path {
-    fill: none;
-    stroke: #646464;
-    stroke-width: 1px;
-    stroke-dasharray: 2,2;
-    stroke-linejoin: round;
-  }
-
 .btn {
-    outline: 3px solid white;
-    padding: .5em;
-    margin-left: 3em;
-    margin-right: 3em;
-    min-width: 4em;
-    max-width: 8em;
+    outline: .1vw solid white;
+    padding: 1vw;
+    margin-left: 1vw;
+    margin-right: 1vw;
+    min-width: 6vw;
     text-align: center;
     color: white;
-    background-color: var(--main-bg-color);
-    -moz-box-shadow:    none;
-    -webkit-box-shadow: none;
-    box-shadow:         none;
 }
 
 
@@ -174,15 +162,11 @@ path {
 /* MEDIA QUERIES */
 @media screen and (max-width: 992px) {
     .header {
-        font-size: 14em;
-    }
-
-    .btn {
-        min-width: 4em;
+        font-size: 30vw;
     }
 
     .catchphrase {
-        font-size: 2em; 
+        font-size: 8vw;
     }
 
     #product-image {
@@ -201,15 +185,15 @@ path {
 
 @media screen and (max-width: 768px) {
     .header {
-        font-size: 12em;
-    }
-
-    .btn {
-        min-width: 4em;
+        font-size: 30vw;
     }
 
     .catchphrase {
-        font-size: 2em; 
+        font-size: 8vw;
+    }
+    
+    .btn {
+        min-width: 4em;
     }
 
     #product-image {
@@ -228,18 +212,11 @@ path {
 
 @media screen and (max-width: 414px) {
     .header {
-        font-size: 6em;
-    }
-
-    .btn {
-        min-width: 2em;
-        margin-left: 1em;
-        margin-right: 1em;
-        font-size: .75em;
+        font-size: 30vw;
     }
 
     .catchphrase {
-        font-size: 1em; 
+        font-size: 8vw;
     }
 
     #product-image {
